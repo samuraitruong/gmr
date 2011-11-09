@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<SPDisposeCheckSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AssembliesToAnalyze>
+    <ProjectAssemblyInfo>
+      <AssemblyPath>D:\Projects\GMR\Source\trunk\GMR.App\obj\Debug\vi-VN\GMR.App.resources.dll</AssemblyPath>
+      <ProjectUniqueName>GMR.App\GMR.App.csproj</ProjectUniqueName>
+    </ProjectAssemblyInfo>
+    <ProjectAssemblyInfo>
+      <AssemblyPath>D:\Projects\GMR\Source\trunk\GMR.App\obj\Debug\GMR.App.dll</AssemblyPath>
+      <ProjectUniqueName>GMR.App\GMR.App.csproj</ProjectUniqueName>
+    </ProjectAssemblyInfo>
+    <ProjectAssemblyInfo>
+      <AssemblyPath>D:\Projects\GMR\Source\trunk\GMR.App.Tests\obj\Debug\GMR.App.Tests.dll</AssemblyPath>
+      <ProjectUniqueName>GMR.App.Tests\GMR.App.Tests.csproj</ProjectUniqueName>
+    </ProjectAssemblyInfo>
+    <ProjectAssemblyInfo>
+      <AssemblyPath>D:\Projects\GMR\Source\trunk\GMR.Repository\obj\Debug\GMR.Repository.dll</AssemblyPath>
+      <ProjectUniqueName>GMR.Repository\GMR.Repository.csproj</ProjectUniqueName>
+    </ProjectAssemblyInfo>
+    <ProjectAssemblyInfo>
+      <AssemblyPath>D:\Projects\GMR\Source\trunk\GMR.Biz\obj\Debug\GMR.Biz.dll</AssemblyPath>
+      <ProjectUniqueName>GMR.Biz\GMR.Biz.csproj</ProjectUniqueName>
+    </ProjectAssemblyInfo>
+    <ProjectAssemblyInfo>
+      <AssemblyPath>D:\Projects\GMR\Source\trunk\GMR.Common\obj\Debug\GMR.Common.dll</AssemblyPath>
+      <ProjectUniqueName>GMR.Common\GMR.Common.csproj</ProjectUniqueName>
+    </ProjectAssemblyInfo>
+    <ProjectAssemblyInfo>
+      <AssemblyPath>D:\Projects\GMR\Source\trunk\GMR.Configuration\obj\Debug\GMR.Configuration.dll</AssemblyPath>
+      <ProjectUniqueName>GMR.Configuration\GMR.Configuration.csproj</ProjectUniqueName>
+    </ProjectAssemblyInfo>
+  </AssembliesToAnalyze>
+  <IsOn>false</IsOn>
+  <Debug>false</Debug>
+  <V1>false</V1>
+  <ShowUndocumented>false</ShowUndocumented>
+  <OnlyUndocumented>false</OnlyUndocumented>
+  <TreatProblemsAs>Errors</TreatProblemsAs>
+  <PathToSPDisposeCheck>C:\Program Files (x86)\Microsoft\Sharepoint Dispose Check\SPDisposeCheck.exe</PathToSPDisposeCheck>
+  <ExecuteAfterBuild>true</ExecuteAfterBuild>
+</SPDisposeCheckSettings>

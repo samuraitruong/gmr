@@ -1,0 +1,181 @@
+﻿
+/*  Links overrides */
+#dynamicCharts a:link, #dynamicCharts  a:hover, #dynamicCharts a:visited {
+	color: #0054A6;
+}
+#dynamicCharts  a.external {
+	background: url(../goldsurvey_images/"external.gif") no-repeat scroll right center transparent;
+	display: inline-block;
+	padding-right: 18px;
+}
+
+#dynamicCharts a {
+	color: #006699;
+	font-weight: normal;
+	text-decoration: none;
+}
+/* ********************* */
+
+#dynamicCharts {
+	height: 190px;
+	border: 1px solid #CCCCCC;
+	width: 274px;
+	padding: 5px;
+	position: relative;
+	margin:0px 0 7px 7px;
+	background-color:#FFF;
+	
+}
+
+#dynamicCharts p { width: 275px; 
+	position: absolute;
+	bottom: 2px;
+	text-align : center;
+	font-size: 12px;
+	margin: 0 !important;
+}
+
+#dynamicCharts h3 {
+	border-bottom: 1px solid #CCCCCC;
+	margin: 10px 0;
+	color: #AC1A2F;
+	font-size: 18px;
+	margin-bottom: 8px;
+	width: 100%;
+}
+ul.metals {
+	bottom: 3px;
+	font-size: 0.8em;
+	list-style: none outside none;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	left: 47px 
+}
+
+ul.metals li {display: inline-block;
+	float: left;
+	margin-right: 9px
+	
+}
+
+ul.metals li a {
+    border: 1px solid #CCC;
+    color: #000000;
+    display: block;
+    line-height: 15px;
+    list-style: none outside none;
+    margin: 2px 0;
+    padding: 2px 1px;
+    text-align: center;
+    width: auto;
+	padding: 0 3px;
+	font-weight:bolder;
+} 
+
+#dynamicCharts .current {
+	background-color: #EEEEEE;
+}
+
+#dynamicCharts #chart_graph {
+	position: absolute;
+	top: 40px;
+	left: 20px
+}
+
+#dynamicCharts #chart_graph img {
+	float: right;
+	margin-bottom: 5px;
+}
+
+#dynamicCharts #graph-title {
+    border: 1px solid #CCCCCC;
+    top: 5px;
+    font-size: 0.9em;
+    height: 20px;
+    left: 5px;
+    line-height: 20px;
+    padding-left: 5px;
+    position: absolute;
+    text-align: left;
+    width: 90px;
+	color: #3494E1;
+}
+#dynamicCharts ol {
+	margin: 0;
+	height: auto;
+	clear: both;
+	float: right;
+	font-size: 0.8em;
+	position: absolute;
+	top: 3px;
+	right: 5px
+}
+
+#dynamicCharts ol li {
+	border: 1px solid #ccc;
+	display: inline;
+	float: left;
+	padding: 3px;
+	margin: 2px 3px;
+}
+
+
+
+/*
+	root element for the scrollable.
+	when scrolling occurs this element stays still.
+*/
+.scrollable {
+
+	/* required settings */
+	position:relative;
+	overflow:hidden;
+	width: 410px;
+	height:78px;
+
+	/* custom decorations */
+	border:1px solid #ccc;
+	background:url(/img/global/gradient/h300.png) repeat-x;
+}
+
+/*
+	root element for scrollable items. Must be absolutely positioned
+	and it should have a extremely large width to accomodate scrollable items.
+	it's enough that you set the width and height for the root element and
+	not for this element.
+*/
+.scrollable .items {
+	/* this cannot be too large */
+	width:20000em;
+	position:absolute;
+	clear:both;
+}
+
+.items div {
+	float:left;
+	width:680px;
+}
+
+/* single scrollable item */
+.scrollable img {
+	float:left;
+	margin:5px 5px 5px 5px;
+	background-color:#fff;
+	padding:2px;
+	border:1px solid #ccc;
+	width:100px;
+	height:75px;
+	
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+}
+
+/* active item */
+.scrollable .active {
+	border:2px solid #000;
+	position:relative;
+	cursor:default;
+}
+
+

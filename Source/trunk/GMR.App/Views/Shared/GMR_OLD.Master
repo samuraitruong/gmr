@@ -1,0 +1,707 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/home.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- InstanceBeginEditable name="doctitle" -->
+
+<title>Công ty TNHH Nhịp Điệu Thị Trường Toàn Cầu</title>
+<title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    <script src="<%: Url.Content("~/Scripts/jquery-1.5.1.min.js") %>" type="text/javascript"></script>
+    <script src="<%: Url.Content("~/Scripts/modernizr-1.7.min.js") %>" type="text/javascript"></script>
+<link href="<% =Url.Content("~/Content/css/general.css")%>" rel="stylesheet" type="text/css"/>
+
+<link href="<% =Url.Content("~/Content/css/mainmenu.css")%>" rel="stylesheet" type="text/css"/>
+
+<!-- InstanceEndEditable -->
+
+<!-- InstanceBeginEditable name="head" -->
+
+<!-- InstanceEndEditable -->
+
+</head>
+
+<script language="javascript" type="text/javascript">
+    function textboxFocus(el, defaultValue) {
+        if (defaultValue != null) {
+            if (el.value == defaultValue) {
+                el.value = '';
+            }
+        }
+    }
+
+    function textboxBlur(el, defaultValue) {
+        if (defaultValue != null) {
+            if (el.value == '') {
+                el.value = defaultValue;
+            }
+        }
+    }
+
+</script>
+
+<body>
+
+<div class="main">
+
+	<div class="menu">
+
+    </div>
+
+    
+
+    <!--		START HEADER	-->
+
+    
+
+    <div class="header">   
+    
+	<div class="language">
+
+            <span class="time">Mar 12, 2009</span>&nbsp;&nbsp; | &nbsp;&nbsp;<a href="#" title="English">English</a>&nbsp;&nbsp; | &nbsp;&nbsp;<a href="#" title="Vietnamese">Vietnamese</a>        
+
+    </div>
+
+    	<div class="logo">
+
+			<img src="/content/images/logo.png" />            
+
+		</div>
+
+		
+
+        <!--<div class="slogan">
+
+          <img src="/content/images/slogan.png"/>            
+
+        </div> -->
+
+			
+
+        
+
+    <!--		END HEADER	-->
+
+<!--	<div class="bg_left">
+
+		<table width="29%" border="0" cellspacing="0" cellpadding="0" class="market_top">
+
+				  <tr>
+
+					<td class="bold">HOSE</td>
+
+					<td class="green_tahoma_11">+5 (1.5%)</td>
+
+					<td class="green_tahoma_11 border">7051.38</td>
+
+					<td class="bold">HASTC</td>
+
+					<td class="red_tahoma_11">+5 (1.5%)</td>
+
+					<td class="red_tahoma_11">7051.38</td>
+
+				  </tr>
+
+				  <tr>
+
+					<td><img src="/content/images/up_m.gif" width="10" height="12" /></td>
+
+					<td>Vol: 19,47</td>
+
+					<td class="border">VL: 311</td>
+
+					<td><img src="/content/images/down_m.gif" width="10" height="12" /></td>
+
+					<td>Vol: 19,47</td>
+
+					<td>VL: 311</td>
+
+				  </tr>
+
+		</table>
+
+	</div>-->
+
+
+
+	<div class="latestnews">
+
+		<div class="title">Tin mới nhất</div>
+
+		<ul>
+
+			<li>10:15AM <a href="#">HSC Phone and Fax Numbers Change</a></li>
+
+			<li>10:10AM <a href="#">Download Fiachra Maccana's presentation "Market turns ... can it last ?"</a></li>
+
+			<li>10:00AM <a href="#">Strategic Investment Arm of the Government</a></li>
+
+
+
+		</ul>
+
+	</div>
+
+	
+
+	<!-- START ADV --> 
+
+	<div class="adv">
+
+		<img src="/content/images/adv.jpg" display="none"/>
+
+	</div>
+
+	<!--END ADV --> 
+
+	<!--		START MENU	-->
+
+    <div class="menu">
+
+     <% Html.RenderPartial("MainMenu", ViewData["MainMenu"]); %>
+
+        <div class="searchStock">
+
+            <input type="text" name="textfield" id="textfield" value="Get quote" onfocus="textboxFocus(this, 'Get quote');" onblur="textboxBlur(this, 'Get quote');"/>
+
+            <a href="#"><span><img src="/content/images/button_search.png" border="0" /> </span></a>        
+
+        </div>
+
+  </div>
+
+  <!--		END MENU	-->
+
+<!-- 
+
+ <div class="adv">
+
+  	<img src="/content/images/adv.jpg" />
+
+  </div>
+
+--> 
+
+ <!--		START CONTENT	-->
+
+  <div class="content"><!-- InstanceBeginEditable name="main" -->
+  <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+  	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+      <tr valign="top">
+
+        <td class="bg_left">
+
+        	<div class="left_content">
+
+            	<!--<div class="live_board">
+
+                	<ul>
+
+                    	<li class="text">Live board:</li>
+
+                        <li><a href="#">HOSE</a></li>
+
+                        <li><a href="#">HASTC</a></li>         
+
+                    </ul>
+
+                </div> -->
+
+                <div class="module_trends">
+
+               	  <!--
+
+				  <div class="title">
+
+                    
+
+					<div class="text">
+
+                            <img src="/content/images/li.gif" /> Trends              	
+
+                    </div>
+
+                      <div class="time">
+
+                      	<ul>
+
+                        	<li class="current"><a href="#">HOSE</a></li>
+
+                            <li><a href="#">HASTC</a></li>                            
+
+                        </ul>  	
+
+                      </div>                    
+
+                    </div> -->
+
+                    <ul>
+
+                      <li class="current"><a href="#"><span>Price</span></a></li>	
+
+                        <li><a href="#"><span>Volume</span></a></li>	
+
+                        <li><a href="#"><span>Value</span></a></li>	                        
+
+                  </ul>
+
+                    <table border="0" cellspacing="0" cellpadding="0" class="table_trends">
+
+                      <tr class="title">
+
+                        <td class="bold" width="40">Bulish</td>
+
+                        <td >Symbol</td>
+
+                        <td align="right"  width="197">Change (%)</td>
+
+                        <td align="right"  width="60">Vol</td>
+
+                        <td class="last" width="60">Value</td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td rowspan="5"><img src="/content/images/up.png" width="52" height="42" /></td>
+
+                        <td><a href="#">TC5</a></td>
+
+                        <td class="green_tahoma_11 right">+4.5 (+4.97%)</td>
+
+                        <td class="right">3.5M</td>
+
+                        <td class="last"> 30.1B</td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td><a href="#">TC5</a></td>
+
+                        <td class="green_tahoma_11 right">+4.5 (+4.97%)</td>
+
+                        <td class="right">19.4M</td>
+
+                        <td class="last"> 30.1B</td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td><a href="#">VTA</a></td>
+
+                        <td class="green_tahoma_11 right">+4.5 (+4.97%)</td>
+
+                        <td class="right">19.4M</td>
+
+                        <td class="last"> 30.1B</td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td><a href="#">TC5</a></td>
+
+                        <td class="green_tahoma_11 right">+4.5 (+4.97%)</td>
+
+                        <td class="right">19.4M</td>
+
+                        <td class="last"> 30.1B</td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td><a href="#">VTA</a></td>
+
+                        <td class="green_tahoma_11 right">+4.5 (+4.97%)</td>
+
+                        <td class="right">19.4K</td>
+
+                        <td class="last"> 30.1B</td>
+
+                      </tr>
+
+                      <tr class="title">
+
+                        <td class="bold" width="67">Bearish</td>
+
+                        <td  width="60">Symbol</td>
+
+                        <td align="right">Change (%)</td>
+
+                        <td align="right">Vol</td>
+
+                        <td class="last">Value</td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td rowspan="5"><img src="/content/images/down.png" width="52" height="42" /></td>
+
+                        <td><a href="#">TC5</a></td>
+
+                        <td class="green_tahoma_11 right">+4.5 (+4.97%)</td>
+
+                        <td class="right">19.4M</td>
+
+                        <td class="last"> 30.1B</td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td><a href="#">SFC</a></td>
+
+                        <td class="green_tahoma_11 right">+4.5 (+4.97%)</td>
+
+                        <td class="right">19.4M</td>
+
+                        <td class="last"> 30.1B</td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td><a href="#">VTA</a></td>
+
+                        <td class="green_tahoma_11 right">+4.5 (+4.97%)</td>
+
+                        <td class="right">19.4M</td>
+
+                        <td class="last"> 30.1B</td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td><a href="#">TC5</a></td>
+
+                        <td class="green_tahoma_11 right">+4.5 (+4.97%)</td>
+
+                        <td class="right">19.4M</td>
+
+                        <td class="last"> 30.1B</td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td><a href="#">TC5</a></td>
+
+                        <td class="green_tahoma_11 right">+4.5 (+4.97%)</td>
+
+                        <td class="right">19.4M</td>
+
+                        <td class="last"> 30.1B</td>
+
+                      </tr>
+
+                  </table>
+
+
+
+              </div>
+
+              <div class="module_market">
+
+               	  <div class="title">
+
+                    <div class="text">
+
+                            <img src="/content/images/li.gif" /> Tóm lược thị trường              	
+
+                    </div>
+
+                        <div class="time">Mar 11,2009</div>                    
+
+                  </div>
+
+                    <table border="0" cellspacing="0" cellpadding="0" class="table_market">
+
+                      <tr>
+
+                        <td width="137" class="bold">Dow Jones</td>
+
+                        <td  width="60" class="right"> 7,270.89</td>
+
+                        <td class="green_tahoma_11 last">-80.05</td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td width="67" class="bold">S&P 500</td>
+
+                        <td  width="60" class="right"> 7,270.89</td>
+
+                        <td class="green_tahoma_11 last">-80.05</td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td width="67" class="bold">Niken</td>
+
+                        <td  width="60" class="right"> 7,270.89</td>
+
+                        <td class="red_tahoma_11 last">-80.05</td>
+
+                      </tr>                      
+
+                  </table>
+
+              </div>
+
+              <div class="module_market">
+
+               	  <div class="title">
+
+                    <div class="text">
+
+                            <img src="/content/images/li.gif" /> Tỉ giá ngoại tệ              	
+
+                    </div>
+
+                        <div class="time">Mar 11,2009</div>                    
+
+                  </div>
+
+                    <table border="0" cellspacing="0" cellpadding="0" class="table_market">
+
+                      <tr>
+
+                        <td width="137" class="bold">USD</td>
+
+                        <td  width="60" class="right"> 7,270.89</td>
+
+                        <td class="last">22.368</td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td width="67" class="bold">EUR</td>
+
+                        <td  width="60" class="right"> 7,270.89</td>
+
+                        <td class="last">22.368</td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td width="67" class="bold">JPY</td>
+
+                        <td  width="60" class="right"> 7,270.89</td>
+
+                        <td class="last">22.368</td>
+
+                      </tr>                      
+
+                  </table>
+
+              </div>
+
+            </div>
+
+        </td>     
+
+        <td>
+
+        	<div class="center_content">
+
+            	<!--<table width="100%" border="0" cellspacing="0" cellpadding="0" class="market_top">
+
+                  <tr>
+
+                    <td class="bold">HOSE</td>
+
+                    <td class="green_tahoma_11">+5 (1.5%)</td>
+
+                    <td class="green_tahoma_11 border">7051.38</td>
+
+                    <td class="bold">HASTC</td>
+
+                    <td class="red_tahoma_11">+5 (1.5%)</td>
+
+                    <td class="red_tahoma_11">7051.38</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td><img src="/content/images/up_m.gif" width="10" height="12" /></td>
+
+                    <td>Vol: 19,47</td>
+
+                    <td class="border">VL: 311</td>
+
+                    <td><img src="/content/images/down_m.gif" width="10" height="12" /></td>
+
+                    <td>Vol: 19,47</td>
+
+                    <td>VL: 311</td>
+
+                  </tr>
+
+                </table> -->
+
+                <div class="news_homepage">
+
+                    <div class="market_commentary">
+
+                        <div class="title">Nhận Định Thị Trường</div>
+
+                        <div class="title_news">
+
+                            <a href="#">Index gains as investor anxiety eases</a> <span class="time">(Fed 28, 2009)</span>                        </div>
+
+                      The VN-lndex yesterday added a significant 4.03 points to close at 251.88, an increase of 1.63 per cent, despite a World Bank report predicting that the global economy would likely contract in 2009 for the first time since World War II. The VN-lndex yesterday added a significant 4.03 points to close at 251.88, an increase of 1.63%. Trading volume rose by 20 per cent over Monday's session to 12.4 million shares on a turnover of VND217.6 billion (US$12.8 million). Sacombank (STB) 
+
+                    </div>
+
+                    <div class="read_more_50">
+
+                    	<div class="read_more2"><a href="#">Read more <img src="/content/images/readmore.gif" border="0"/></a></div>
+
+                    </div>
+
+                    <div class="read_more_50" align="right">
+
+                    	<a href="#"><img src="/content/images/download.gif" border="0"/></a>
+
+                    </div>
+
+                 <!--   <div class="hsc_news">
+
+                        <div class="title">HSC News</div>
+
+                        <ul>
+
+                        	<li><a href="#">HSC Phone and Fax Numbers Change</a> (Mar 11, 2009)</li>
+
+                            <li><a href="#">Download Fiachra Maccana's presentation "Market turns ... can it last ?"</a>  (Mar 09, 2009)</li>
+
+                            <li><a href="#">Strategic Investment Arm of the Government</a>  (Mar 09, 2009)</li>
+
+                            <li><a href="#">Ha Noi bourse approves 94th broker</a>  (Mar 09, 2009)</li>
+
+                            <li><a href="#">VND deposit interest rates have new peak 8.7%</a>  (Mar 09, 2009)</li>
+
+                        </ul>
+
+                        <div class="read_more2"><a href="#">Read more <img src="/content/images/readmore.gif" border="0"/></a></div>
+
+                    </div> -->
+
+                </div>                
+
+          </div>
+
+        </td>     
+
+        <td class="bg_right">
+
+        	<div class="right_content">
+
+           	  <p class="top">Dịch vụ của chúng tôi</p>
+
+                <div class="right_p">
+
+               	  <p class="title"><a href="#">Dịch vụ 1</a></p>
+
+                    <p>Giới thiệu tóm lược nội dung dịch vụ 1... </p>                    
+
+                </div>
+
+                <div class="right_p">
+
+                	<p class="title"><a href="#">Dịch vụ 2</a></p>
+
+                    <p>Giới thiệu tóm lược nội dung dịch vụ 2... </p>                    
+
+              </div>
+
+                <div class="right_p">
+
+                	<p class="title"><a href="#">Dịch vụ 3</a></p>
+
+                    <p>Giới thiệu tóm luợc nội dung dịch vụ 3... </p>                    
+
+              </div>
+
+              <div class="read_more"><a href="#">Read more <img src="/content/images/readmore.gif" border="0"/></a></div>
+
+     <!--         <div class="banner_adv">
+
+              		<a href="#"><img src="/content/images/dky.gif" border="0" /></a>              </div>
+
+              <div class="banner_adv">
+
+              		<a href="#"><img src="/content/images/trading.gif" border="0" /></a>              </div>
+
+              <div class="banner_adv">
+
+              		<a href="#"><img src="/content/images/sh.gif" border="0" /></a>              </div>
+
+              <div class="banner_adv">
+
+              		<a href="#"><img src="/content/images/phone.gif" border="0" /></a>              </div> -->
+
+              
+
+          </div>
+
+        </td>                
+
+      </tr>
+
+    </table>  
+
+  <!-- InstanceEndEditable --></div>
+
+  <!--		END CONTENT	-->
+
+  <!--		START FOOTER	-->
+
+  <div class="footer">
+
+    <div class="left">
+
+       © 2011 Bản Quyền thuộc về Công Ty TNHH Nhịp Điệu Thị Trường Toàn Cầu    </div>
+
+    <div class="right">
+
+        |  <a href="#">Trang Chủ</a>  
+
+        |  <a href="#">Điều khoản sử dụng</a>  
+
+        |  <a href="#">Tuyên bố riêng tư </a>  
+
+        |  <a href="#">Liên hệ</a>  |    </div>
+
+  </div>
+
+  <!--		END FOOTER	-->
+
+</div>
+
+</div>
+
+
+
+</body>
+
+<!-- InstanceEnd -->
+
+</html>
+

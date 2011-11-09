@@ -1,0 +1,138 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/news.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Công ty TNHH Nhịp Điệu Thị Trường Toàn Cầu</title>
+<link href="<%=Url.Content("~/Content/css/general.css") %>" rel="stylesheet" type="text/css"/>
+<link href="<%=Url.Content("~/Content/css/mainmenu.css") %>" rel="stylesheet" type="text/css"/>
+    <style type="text/css"> 
+        div.center_content
+        {
+            width:100% !important
+        }
+    </style>
+<asp:ContentPlaceHolder id="AdditionalHead" runat="server"></asp:ContentPlaceHolder>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+<script language="javascript" type="text/javascript">
+    function textboxFocus(el, defaultValue) {
+        if (defaultValue != null) {
+            if (el.value == defaultValue) {
+                el.value = '';
+            }
+        }
+    }
+
+    function textboxBlur(el, defaultValue) {
+        if (defaultValue != null) {
+            if (el.value == '') {
+                el.value = defaultValue;
+            }
+        }
+    }
+</script>
+<body>
+<div class="main">
+	<!--		START HEADER	-->
+	<div class="header">    
+    	<div class="logo">
+          <img src="/Content/images/logo.png" />            
+        </div>
+       <%-- <div class="slogan">
+          <img src="/Content/images/slogan.png"/>            
+        </div>--%>
+        <div class="language">
+            <span class="time">Mar 12, 2009</span>&nbsp;&nbsp; | &nbsp;&nbsp;<a href="#" title="English">English</a>&nbsp;&nbsp; | &nbsp;&nbsp;<a href="#" title="Vietnamese">Vietnamese</a>        
+        </div>
+    </div>
+    <!--		END HEADER	-->
+    <!--		START MENU	-->
+    <div class="menu">
+      <% Html.RenderPartial("MainMenu", ViewData["MainMenu"]); %>
+        <div class="searchStock">
+            <input type="text" name="textfield" id="textfield" value="Get quote" onfocus="textboxFocus(this, 'Get quote');" onblur="textboxBlur(this, 'Get quote');"/>
+            <a href="#"><span><img src="/Content/images/button_search.png" border="0" /> </span></a>        
+        </div>
+  </div>
+  <!--		END MENU	-->
+  <!--		START CONTENT	-->
+  <div class="content"><!-- InstanceBeginEditable name="main" -->
+     <table width="100%" border="0" cellspacing="0" cellpadding="0" class="page_other">
+      <tr valign="top">
+        <td class="bg_left">
+        	<div class="left_content">
+            	<img src="/Content/images/adv_small.jpg" />
+                <asp:ContentPlaceHolder ID="SubCategoryNavigation" runat="server"></asp:ContentPlaceHolder>
+                
+            </div>
+        </td>
+        <td>
+        	<div class="center_content">
+            	<%--<div class="title_main">
+                    <h3><a href="#">Home</a><span class="space"><img src="/Content/images/next.gif" /></span><span class="current">News</span></h3>				
+                </div>--%>
+                <asp:ContentPlaceHolder runat="server" ID="MainContent" ></asp:ContentPlaceHolder>
+               
+            </div>
+        </td>
+       <%-- <td class="bg_right">
+        	<div class="right_content">
+            	<div class="top_news"></div>
+                <div class="link_news">
+                    <div class="menu_news">
+                        <div class="title2"><span>Online Services</span></div>
+                        <ul class="top">
+                            <li><a href="#">Open Account Online</a></li>
+                            <li><a href="#">Online Trading</a></li>
+                            <li><a href="#">Online Book Management </a></li>
+                            <li><a href="#">Call Center</a></li>               
+                        </ul>
+                    </div>
+                    <div class="menu_news">
+                        <div class="title2"><span>Business Activities</span></div>
+                        <ul class="bottom">
+                            <li><a href="#">Brokerage and Sales</a></li>
+                            <li><a href="#">Investment Banking</a></li>
+                            <li><a href="#">Financical Investment</a></li>
+                            <li><a href="#">Research</a></li>               
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </td>--%>
+      </tr>
+    </table>
+
+  <!-- InstanceEndEditable --></div>
+  <!--		END CONTENT	-->
+  <!--		START FOOTER	-->
+   <div class="footer">
+    <div class="left">
+       © 2011 Bản Quyền thuộc về Công Ty TNHH Nhịp Điệu Thị Trường Toàn Cầu    </div>
+    <div class="right">
+        |  <a href="#">Trang Chủ</a>  
+        |  <a href="#">Điều khoản sử dụng</a>  
+        |  <a href="#">Tuyên bố riêng tư </a>  
+        |  <a href="#">Liên hệ</a>  |    </div>
+  </div>
+  <div style="padding-top:35px">
+  <!--		END FOOTER	-->
+  <!-- Histats.com  START  (standard)-->
+<script type="text/javascript">    document.write(unescape("%3Cscript src=%27http://s10.histats.com/js15.js%27 type=%27text/javascript%27%3E%3C/script%3E"));</script>
+<a href="http://www.histats.com" target="_blank" title="site stats" ><script  type="text/javascript" >
+                                                                         try {
+                                                                             Histats.start(1, 1700320, 4, 205, 255, 27, "00000011");
+                                                                             Histats.track_hits();
+                                                                         } catch (err) { };
+</script></a>
+<noscript><a href="http://www.histats.com" target="_blank"><img  src="http://sstatic1.histats.com/0.gif?1700320&101" alt="site stats" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</div>
+</div>
+</body>
+<!-- InstanceEnd --></html>
+

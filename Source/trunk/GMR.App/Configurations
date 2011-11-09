@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<GMR.Configuration>
+  <WebUIElement
+      test = "sample configuration API"
+      removeRule="[^a-zA-Z0-9]"
+      replacementChar="_"
+      featuredCount="6"
+      othernewsCount="10"
+      hotestNewsCount="2"
+      otherFeaturesNews="8"
+      featuredItemOnHP="3"
+      articlePagingItem="12"
+      marqueeItemCount="10"
+      jobDisplayOnHP="18"
+      extension=".aspx"
+      ReCaptchaPrivateKey="6LeQvrwSAAAAAJEf1XBpO9xpb7qiKLWU9-utIsaH"
+      ReCaptchaPublicKey="6LeQvrwSAAAAABCZFMrqtc1TFz8JYbRuf9HyEGtm"
+      VideoPlayer ="&lt;p style=&quot;text-align: center;&quot;&gt;
+&lt;a
+	href=&quot;{0}&quot;
+	style=&quot;display:block;width:425px;height:300px;&quot;
+	id=&quot;{1}&quot; class=&quot;player&quot;&gt;
+&lt;/a&gt;
+
+&lt;/p&gt;"
+      />
+  <FileResponsity 
+      bannerFolder="~/Resources/Banners"
+      pictureFolder="~/Resources/Pictures"
+    />
+  <lucene
+    indexingFolder = "C:\Projects\dubaonhanluc\DBNL\DBNL.App\DBNL.App\App_Data\Indexing"
+    indexingServiceUrl ="http://localhost:8088/Dummy.aspx/Indexing"
+    interval="100"
+  />
+  <emailing
+    contactAddress="samuraitruong@yahoo.com"
+    
+    />
+    
+  
+</GMR.Configuration>

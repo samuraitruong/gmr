@@ -1,0 +1,147 @@
+/* CSS Document */
+
+#spotpriceTools{
+margin-top:5px;
+height:65px;
+border-top:1px solid #ccc;
+border-bottom:1px solid #ccc;
+
+}
+#spotpriceLeft{
+position:relative;
+margin-top:5px;
+float:left;	
+width:100px;
+}
+#spotpriceLeft h1,
+#spotpriceLeft h2,
+#spotpriceLeft h3{
+font-size:12px;
+}
+#spotpriceLeft h3
+{
+    display:none;
+}
+#spotpriceLeft h2 a{
+font-size:11px;	
+padding-left:0px;
+padding-right:7px;
+margin-right:3px;
+background-position:100% 4px;
+}
+#spotpriceLeft h3{
+font-size:10px;	
+color:#666;
+}
+#spotpriceLoading{
+margin-top:3px;
+float:right;	
+width:100px;	
+height:60px;
+background:url(../images/loading-16x16.gif) center no-repeat;
+display:none;	
+}
+#spotpriceTable{
+float:right;	
+margin-top:5px;
+}
+#spotpriceTable tr{	
+}
+#spotpriceTable tr th,
+#spotpriceTable tr td{
+font-size:12px;
+text-align:left;
+padding:0px 0px 5px 0px;
+}
+#spotpriceTable tr th{
+text-align:right;
+}
+#spotpriceTable tr td{
+text-align:right;	
+}
+#spotpriceTable tbody tr td.currency
+{
+padding-right:1px;
+padding-left:2px;
+}
+#spotpriceTable tbody tr td.value
+{
+padding-right:2px;
+padding-left:1px;
+}
+#spotpriceTable tbody tr td.arrow{
+width:12px;
+padding:0px;
+background:url(../images/sprite-invest-tools-arrow.png) no-repeat center;	
+}
+#spotpriceTable tbody tr td.up{
+background-position:1px -2px;	
+}
+#spotpriceTable tbody tr td.down{
+background-position:1px -66px;	
+}
+#spotpriceTable tbody tr td.middle{
+background-position:1px -33px;	
+}
+
+
+/*this is the currency menu*/
+#spotpriceCurrencies{
+position:absolute;
+width:220px;
+background:transparent url(../images/tooltip-sprite.png) no-repeat 0px -348px;
+border-bottom:2px solid #ccc;
+display:none;
+}
+#spotpriceCurrencies div.margin{
+position:relative;
+margin:25px 10px 10px 10px;	
+font-size:12px;
+}
+#spotpriceCurrencies div.margin ul li{
+float:left;
+display:block;
+width:50%;
+margin-top:3px;
+}
+a.flag-16x16{
+background:url(../images/sprite-flags-16x16.png) no-repeat 0 1px;
+padding-left:20px;		
+}
+a.australia{
+background-position:0px 1px;	
+}
+a.canada{
+background-position:0px -299px;	
+}
+a.china{
+background-position:0px -49px;	
+}
+a.europe{
+background-position:0px -349px;	
+}
+a.hong-kong{
+background-position:0px -99px;	
+}
+a.india{
+background-position:0px -399px;	
+}
+a.japan{
+background-position:0px -149px;	
+}
+a.south-africa{
+background-position:0px -449px;	
+}
+a.switzerland{
+background-position:0px -199px;	
+}
+a.usa{
+background-position:0px -499px;	
+}
+a.uk{
+background-position:0px -249px;	
+}
+.read-more
+{
+    display:none;
+}
